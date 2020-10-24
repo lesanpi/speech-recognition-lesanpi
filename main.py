@@ -6,7 +6,7 @@ device = "cuda" if torch.cuda.is_available() else "cpu"
 
 textTransform = TextTransform()
 
-train_dataset = torchaudio.datasets.LIBRISPEECH("./data", url="train-clean-100", download=True)
+train_dataset = torchaudio.datasets.LIBRISPEECH("./data", url="dev-clean", download=True)
 test_dataset = torchaudio.datasets.LIBRISPEECH("./data", url="test-clean", download=True)
 
 train_audio_transforms = torch.nn.Sequential(

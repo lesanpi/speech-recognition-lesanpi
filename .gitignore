@@ -10,6 +10,8 @@ __pycache__/
 *$py.class
 .idea/
 data/*
+test.py
+SPANISHSPEECH.py
 # C extensions
 *.so
 
