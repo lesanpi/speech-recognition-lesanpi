@@ -35,6 +35,7 @@ class TextTransform:
         self.index_map = {}
 
         for line in map_str.strip().split('\n'):
+
             char, index = line.split()
             self.char_map[char] = index
             self.index_map[index] = char
